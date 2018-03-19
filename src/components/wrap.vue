@@ -18,8 +18,10 @@ export default {
         }
     },
     beforeCreate(){
+        let uid = 1;
+        this.$store.commit('updateUid', uid);
         let condition = {
-            uid: this.$store.state.uid
+            uid: uid
         };
         this.$store.dispatch('getUserInfo', condition);
     },

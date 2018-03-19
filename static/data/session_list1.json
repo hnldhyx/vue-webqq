@@ -1,0 +1,29 @@
+{
+	"data": [{
+        "portrait": {
+            "imgUrl": "xxx"
+        },
+        "remarkName": "备注1",
+        "nickName": "昵称1",
+        "msgPreview": "呃呃呃11111"
+    },{
+        "portrait": {
+            "imgUrl": "xxx"
+        },
+        "remarkName": "备注2",
+        "nickName": "昵称2",
+        "msgPreview": "呃呃呃22222222"
+    },{
+        "portrait": {
+            "imgUrl": "xxx"
+        },
+        "remarkName": "",
+        "nickName": "昵称3",
+        "msgPreview": "呃呃呃3333333333333333333333"
+    }],
+	"meta": {
+		"status": 200,
+		"message": "ok"
+	},
+	"page": {}
+}

@@ -3,22 +3,22 @@
         "portrait": {
             "imgUrl": "xxx"
         },
-        "remarkName": "啊啊啊1",
-        "nickName": "",
+        "remarkName": "备注4",
+        "nickName": "昵称4",
         "msgPreview": "呃呃呃11111"
     },{
         "portrait": {
             "imgUrl": "xxx"
         },
-        "remarkName": "啊啊啊2",
-        "nickName": "eee22",
+        "remarkName": "备注5",
+        "nickName": "昵称5",
         "msgPreview": "呃呃呃22222222"
     },{
         "portrait": {
             "imgUrl": "xxx"
         },
-        "remarkName": "啊啊啊3",
-        "nickName": "eee33",
+        "remarkName": "",
+        "nickName": "昵称6",
         "msgPreview": "呃呃呃3333333333333333333333"
     }],
 	"meta": {

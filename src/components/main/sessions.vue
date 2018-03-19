@@ -7,8 +7,11 @@
                 </div>
                 <div class="sessions-item-info">
                     <div class="user-name">
-                        <span class="remark-name" :title="item.remarkName">{{item.remarkName}}</span>
-                        <span class="nick-name" v-if="item.nickName && item.nickName!=''" :title="item.nickName">({{item.nickName}})</span>
+                        <!-- 当昵称和备注都存在时 -->
+                        <span class="remark-name" v-if="item.remarkName && item.remarkName!=''" :title="item.remarkName">{{item.remarkName}}</span>
+                        <span class="nick-name" v-if="item.remarkName && item.remarkName!=''" :title="item.remarkName">({{item.nickName}})</span>
+                        <!-- 当只有昵称存在时 -->
+                        <span class="remark-name" v-if="!item.remarkName && item.remarkName==''" :title="item.remarkName">{{item.nickName}}</span>
                     </div>
                     <div class="msg-preview" :title="item.msgPreview">{{item.msgPreview}}</div>
                 </div>
@@ -32,10 +35,9 @@
         },
         created(){
             let condition = {
-                uid: userInfo.userId
+                uid: this.$store.state.uid
             }
             this.$store.dispatch('getSessionList', condition);
-            // this.$store.dispatch('getSessionList');
         }
     }
 </script>

@@ -8,14 +8,19 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state: {
-        uid: 1, //登录时获取的
+        uid: 2, //登录时获取的
         userInfo: {}, //存储用户信息
-        sessionsList: []
+        sessionsList: [], //最近会话列表
+        contactsList: null //联系人列表数据
     },
     getters: {
         
     },
     mutations: {
+        /* 更新uid信息的mutation */
+        updateUid(state, uid){
+            state.uid = uid;
+        },
         /* 更新用户信息state的mutation */
         updateUserInfo(state, userInfo){
             state.userInfo = JSON.parse(JSON.stringify(userInfo));
@@ -23,6 +28,10 @@ const store = new Vuex.Store({
         /* 更新会话列表的方法 */
         updateSessionsList(state, sessionsList){
             state.sessionsList = JSON.parse(JSON.stringify(sessionsList));
+        },
+        /* 更新联系人列表的mutation */
+        updateContactsList(state, contactsList){
+            state.contactsList = JSON.parse(JSON.stringify(contactsList));
         }
     },
     actions: {
@@ -37,10 +46,19 @@ const store = new Vuex.Store({
         },
         /* 获取会话列表的接口 */
         getSessionList({}, condition){
-            axios.get('/static/data/session_list.json', condition).then(rsp => {
+            axios.get(`/static/data/session_list${condition.uid}.json`, condition).then(rsp => {
                 let res = rsp.data;
                 if(res.meta.status == 200){
                     this.commit('updateSessionsList', res.data);
+                }
+            })
+        },
+        /* 获取联系人列表的接口 */
+        getContactsList({}, condition){
+            axios.get('/static/data/contacts_list.json', condition).then(rsp => {
+                let res = rsp.data;
+                if(res.meta.status == 200){
+                    this.commit('updateContactsList', res.data);
                 }
             })
         }
