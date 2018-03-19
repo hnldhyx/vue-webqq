@@ -1,11 +1,20 @@
 <template>
     <div class="qq-list">
-        <div class="list-wrap"></div>
+        <div class="list-wrap">
+            <router-view></router-view>
+        </div>
         <ul class="qq-list-footer clearfix">
-            <li class="qq-list-nav" v-for="(item, index) in listNav" :key="index" :class="{active: navSelected == index}" @click="_chooseNav(item, index)">
+            <router-link 
+                tag="li" 
+                :to="item.tab" 
+                class="qq-list-nav" 
+                v-for="(item, index) in listNav" 
+                :key="index" 
+                @click.native="_chooseNav(item, index)"
+            >
                 <div class="nav-icon"></div>
                 <div class="nav-text">{{item.name}}</div>
-            </li>
+            </router-link>
         </ul>
     </div>
 </template>
@@ -18,11 +27,11 @@ export default {
             listNav: [{
                 name: '会话',
                 icon: 'xxx',
-                tab: 'xxx'
+                tab: 'sessions'
             },{
                 name: '联系人',
                 icon: 'xxx',
-                tab: 'xxx'
+                tab: 'contacts'
             },{
                 name: '发现',
                 icon: 'xxx',
@@ -32,12 +41,13 @@ export default {
                 icon: 'xxx',
                 tab: 'xxx'
             }],
-            navSelected: 1
+            navSelected: 1,
+            navTarget: 'contacts'
         }
     },
     methods: {
         _chooseNav(item, index){
-            this.navSelected = index;
+            
         }
     }
 }
@@ -48,6 +58,7 @@ export default {
     height: 100%;
     margin-top: -68px;
     padding-top: 68px;
+    border-radius: 3px;
 }
 
 .list-wrap{
@@ -74,7 +85,7 @@ export default {
             font-size: 12px;
             cursor: pointer;
         }
-        &.active{
+        &.router-link-active{
             background-color: #333;
             .nav-text{
                 color: #fff;

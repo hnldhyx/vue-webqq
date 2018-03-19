@@ -27,7 +27,6 @@ export default {
   font-size: 14px;
   font-family: 'Yahei Micsorft';
   box-sizing: border-box;
-  cursor: default;
   font-style: normal; 
 }
 

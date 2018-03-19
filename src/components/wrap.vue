@@ -11,6 +11,18 @@ import mainContainer from './main/main-container';
 import chatContainer from './chat/chat-container';
 
 export default {
+    name: 'wrap',
+    data(){
+        return {
+
+        }
+    },
+    beforeCreate(){
+        let condition = {
+            uid: this.$store.state.uid
+        };
+        this.$store.dispatch('getUserInfo', condition);
+    },
     components: {
         'main-container': mainContainer,
         'chat-container': chatContainer

@@ -5,6 +5,7 @@ import App from './App'
 
 import axios from 'axios'
 import router from './router/router.js'
+import store from './store/store.js'
 
 Vue.prototype.$axios = axios;
 
@@ -15,5 +16,6 @@ new Vue({
   el: '#app',
   components: { App },
   template: '<App/>',
-  router
+  router,
+  store
 })

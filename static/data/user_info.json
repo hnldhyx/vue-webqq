@@ -1,0 +1,32 @@
+{
+	"data": {
+        "qqNum": "1847081228",
+        "nickName": "执念",
+        "sign": "应该相信命运，它比每个人都懂！",
+        "profile": {
+            "imgUrl": "xxx"
+        },
+        "bussinessList": [{
+            "imgUrl": "/static/img/icon_list_qqzone.png",
+            "cName": "QQ空间",
+            "url": "https://qzone.qq.com/"
+        },{
+            "imgUrl": "/static/img/icon_list_qqmail.png",
+            "cName": "QQ邮箱",
+            "url": "https://mail.qq.com/"
+        },{
+            "imgUrl": "/static/img/icon_list_qqwebsite.png",
+            "cName": "腾讯网",
+            "url": "https://www.qq.com/"
+        },{
+            "imgUrl": "/static/img/icon_list_qqmusic.png",
+            "cName": "QQ音乐",
+            "url": "https://y.qq.com/"
+        }]
+    },
+	"meta": {
+		"status": 200,
+		"message": "ok"
+	},
+	"page": {}
+}

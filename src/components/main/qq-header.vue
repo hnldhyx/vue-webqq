@@ -3,12 +3,12 @@
         <div class="qq-header-info clearfix">
             <div class="profile"></div>
             <div class="info">
-                <div class="username">塞纳河畔</div>
-                <div class="sign">终于结束啦！</div>
+                <div class="username">{{userInfo.nickName}}</div>
+                <div class="sign">{{userInfo.sign}}</div>
             </div>
         </div>
         <ul class="qq-header-icon clearfix">
-            <li class="icon-item" v-for="(item,index) in iconList" :key="index" :title="item.cName">
+            <li class="icon-item" v-for="(item,index) in userInfo.bussinessList" :key="index" :title="item.cName">
                 <img v-bind:src="item.imgUrl" @click="_linkTo(item.url)" />
             </li>
         </ul>
@@ -20,17 +20,13 @@ export default {
     name: 'qq-header',
     data(){
         return {
-            iconList: []
+            
         }
     },
-    mounted(){
-        this.$axios.get('http://localhost:8080/static/data/icon_list.json').then(rsp => {
-            let res = rsp.data;
-            if(res.meta.status == 200){
-                let iconData = res.data;
-                this.iconList = JSON.parse(JSON.stringify(iconData));
-            }
-        })
+    computed: {
+        userInfo(){
+            return this.$store.state.userInfo;
+        }
     },
     methods: {
         _linkTo(url){
