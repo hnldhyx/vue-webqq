@@ -4,7 +4,7 @@
         "nickName": "执念",
         "sign": "应该相信命运，它比每个人都懂！",
         "profile": {
-            "imgUrl": "xxx"
+            "imgUrl": "/static/img/portrait.jpg"
         },
         "bussinessList": [{
             "imgUrl": "/static/img/icon_list_qqzone.png",

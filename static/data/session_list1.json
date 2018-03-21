@@ -1,21 +1,21 @@
 {
 	"data": [{
         "portrait": {
-            "imgUrl": "xxx"
+            "imgUrl": "/static/img/friend_portrait.jpg"
         },
         "remarkName": "备注1",
         "nickName": "昵称1",
         "msgPreview": "呃呃呃11111"
     },{
         "portrait": {
-            "imgUrl": "xxx"
+            "imgUrl": "/static/img/friend_portrait.jpg"
         },
         "remarkName": "备注2",
         "nickName": "昵称2",
         "msgPreview": "呃呃呃22222222"
     },{
         "portrait": {
-            "imgUrl": "xxx"
+            "imgUrl": "/static/img/friend_portrait.jpg"
         },
         "remarkName": "",
         "nickName": "昵称3",

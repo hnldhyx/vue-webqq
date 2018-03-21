@@ -1,7 +1,9 @@
 <template>
     <div class="qq-header">
         <div class="qq-header-info clearfix">
-            <div class="profile"></div>
+            <div class="profile">
+                <img :src="userInfo.profile && userInfo.profile.imgUrl" />
+            </div>
             <div class="info">
                 <div class="username">{{userInfo.nickName}}</div>
                 <div class="sign">{{userInfo.sign}}</div>
@@ -46,6 +48,11 @@ export default {
             width: 46px;
             border: 3px #fff solid;
             box-shadow: 0 0 4px rgba(0,0,0,0.4);
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
         .info{
             float: left;

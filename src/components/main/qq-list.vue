@@ -1,6 +1,10 @@
 <template>
     <div class="qq-list">
         <div class="list-wrap">
+            <div class="contacts-header">
+                {{listNav[navSelected].name}}
+                <div class="search"></div>
+            </div>
             <router-view></router-view>
         </div>
         <ul class="qq-list-footer clearfix">
@@ -35,19 +39,18 @@ export default {
             },{
                 name: '发现',
                 icon: 'xxx',
-                tab: 'xxx'
+                tab: 'finding'
             },{
                 name: '设置',
                 icon: 'xxx',
-                tab: 'xxx'
+                tab: 'setting'
             }],
-            navSelected: 1,
-            navTarget: 'contacts'
+            navSelected: 1
         }
     },
     methods: {
         _chooseNav(item, index){
-            
+            this.navSelected = index;
         }
     }
 }
@@ -58,12 +61,23 @@ export default {
     height: 100%;
     margin-top: -68px;
     padding-top: 68px;
-    border-radius: 3px;
 }
 
 .list-wrap{
     height: calc(100% - 50px);
     background-color: #fff;
+    border-radius: 5px;
+
+    .contacts-header{
+        height: 45px;
+        line-height: 45px;
+        background: linear-gradient(#545454, #222);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+    }
 }
 
 .qq-list-footer{
@@ -87,6 +101,8 @@ export default {
         }
         &.router-link-active{
             background-color: #333;
+            text-shadow: 0 1px 0 #000;
+            box-shadow: inset 0 0 10px #111;
             .nav-text{
                 color: #fff;
             }

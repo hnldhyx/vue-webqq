@@ -7,6 +7,11 @@ import axios from 'axios'
 import router from './router/router.js'
 import store from './store/store.js'
 
+import VueLazyLoad from 'vue-lazyload'
+Vue.use(VueLazyLoad, {
+  loading: '../static/loading-svg/loading-bars.svg'
+});
+
 Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false

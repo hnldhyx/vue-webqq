@@ -4,122 +4,256 @@
             "name": "特别关心",
             "sort": 1,
             "total": 2,
-            "online": 2
+            "online": 2,
+            "friendsList": [{
+                "nickName": "特别关心1",
+                "remarkName": "特别关心1",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "aaaaaa",
+                "status": "online"
+            },{
+                "nickName": "特别关心2",
+                "remarkName": "特别关心2",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "bbbbb",
+                "status": "online"
+            }]
         },{
             "name": "special friends",
             "sort": 2,
             "total": 249,
-            "online": 173
+            "online": 173,
+            "friendsList": [{
+                "nickName": "aaa",
+                "remarkName": "aaaa",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "aaaaaa",
+                "status": "online"
+            },{
+                "nickName": "bbb",
+                "remarkName": "bbbb",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "bbbbb",
+                "status": "online"
+            },{
+                "nickName": "ccc",
+                "remarkName": "cccc",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ccccc",
+                "status": "online"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            }]
         },{
             "name": "好朋友",
             "sort": 3,
             "total": 4,
-            "online": 3
+            "online": 3,
+            "friendsList": [{
+                "nickName": "aaa",
+                "remarkName": "aaaa",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "aaaaaa",
+                "status": "online"
+            },{
+                "nickName": "bbb",
+                "remarkName": "bbbb",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "bbbbb",
+                "status": "online"
+            },{
+                "nickName": "ccc",
+                "remarkName": "cccc",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ccccc",
+                "status": "online"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            }]
         },{
             "name": "家人",
             "sort": 4,
             "total": 2,
-            "online": 1
+            "online": 1,
+            "friendsList": [{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "online"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            }]
         },{
             "name": "同学",
             "sort": 5,
             "total": 2,
-            "online": 2
+            "online": 2,
+            "friendsList": [{
+                "nickName": "aaa",
+                "remarkName": "aaaa",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "aaaaaa",
+                "status": "online"
+            },{
+                "nickName": "bbb",
+                "remarkName": "bbbb",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "bbbbb",
+                "status": "online"
+            }]
         },{
             "name": "normal friends",
             "sort": 6,
             "total": 30,
-            "online": 22
+            "online": 22,
+            "friendsList": [{
+                "nickName": "aaa",
+                "remarkName": "aaaa",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "aaaaaa",
+                "status": "online"
+            },{
+                "nickName": "bbb",
+                "remarkName": "bbbb",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "bbbbb",
+                "status": "online"
+            },{
+                "nickName": "ccc",
+                "remarkName": "cccc",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ccccc",
+                "status": "online"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            },{
+                "nickName": "ddd",
+                "remarkName": "dddd",
+                "portrait": {
+                    "imgUrl": "/static/img/portrait.jpg"
+                },
+                "sign": "ddddd",
+                "status": "outline"
+            }]
         }],
         "crowd": [{
             "name": "FiberHome-NJ",
             "sort": 1,
             "portrait": {
-                "imgUrl": "xxx"
+                "imgUrl": "/static/img/crowd_portrait.jpg"
             }
         },{
             "name": "群名称",
             "sort": 2,
             "portrait": {
-                "imgUrl": "xxx"
+                "imgUrl": "/static/img/crowd_portrait.jpg"
             }
         }],
         "discussion": [{
             "name": "讨论小组1",
             "sort": 1,
             "portrait": {
-                "imgUrl": "xxx"
+                "imgUrl": "/static/img/discussion_portrait.jpg"
             }
         },{
             "name": "讨论小组2",
             "sort": 2,
             "portrait": {
-                "imgUrl": "xxx"
+                "imgUrl": "/static/img/discussion_portrait.jpg"
             }
-        }],
-        "friends": [{
-            "nickName": "aaa",
-            "remarkName": "aaaa",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "aaaaaa",
-            "status": "online",
-            "groupId": 1
-        },{
-            "nickName": "bbb",
-            "remarkName": "bbbb",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "bbbbb",
-            "status": "online",
-            "groupId": 2
-        },{
-            "nickName": "ccc",
-            "remarkName": "cccc",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "ccccc",
-            "status": "online",
-            "groupId": 3
-        },{
-            "nickName": "ddd",
-            "remarkName": "dddd",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "ddddd",
-            "status": "outline",
-            "groupId": 1
-        },{
-            "nickName": "ddd",
-            "remarkName": "dddd",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "ddddd",
-            "status": "outline",
-            "groupId": 6
-        },{
-            "nickName": "ddd",
-            "remarkName": "dddd",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "ddddd",
-            "status": "outline",
-            "groupId": 5
-        },{
-            "nickName": "ddd",
-            "remarkName": "dddd",
-            "portrait": {
-                "imgUrl": "xxx"
-            },
-            "sign": "ddddd",
-            "status": "outline",
-            "groupId": 4
         }]
     },
 	"meta": {

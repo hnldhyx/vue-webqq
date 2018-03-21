@@ -17,10 +17,9 @@ export default {
 </script>
 <style scoped>
 .main-container{
-    position: absolute;
+    float: left;
     width: 280px;
     height: 890px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: 30px;
 }
 </style>

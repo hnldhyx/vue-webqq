@@ -3,7 +3,7 @@
         <ul class="sessions-wrap">
             <li class="sessions-item clearfix" v-for="(item,index) in sessionsList" :key="index">
                 <div class="sessions-item-portrait">
-                    <img src="" alt="">
+                    <img v-lazy="item.portrait && item.portrait.imgUrl">
                 </div>
                 <div class="sessions-item-info">
                     <div class="user-name">
@@ -62,7 +62,6 @@
         float: left;
         height: 40px;
         width: 40px;
-        background: red;
         img{
             height: 100%;
             width: 100%;
